@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { StateOfPage } from "../../App";
-import About from "../Menu/MenuHome/About";
-import Blog from "../Menu/MenuHome/Blog";
-import Contact from "../Menu/MenuHome/Contact";
-import Home from "../Menu/MenuHome/Home";
-import Projects from "../Menu/MenuHome/Projects";
+import About from "./MenuHome/About/About";
+import Blog from "./MenuHome/Blog/Blog";
+import Contact from "./MenuHome/Contact/Contact";
+import Home from "./MenuHome/Home/Home";
+import Projects from "./MenuHome/Projects/Projects";
 export default function MenuHome() {
   const { actualpage, setactualpage, isActive } = useContext(StateOfPage);
   const renderPage = (page) => {

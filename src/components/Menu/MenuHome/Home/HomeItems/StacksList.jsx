@@ -28,7 +28,7 @@ export default function StacksList() {
       <div className="flex flex-wrap gap-6">
         {stacks.map((stack, index) => (
           <div key={index} className="flex items-center gap-x-4 w-[220px]">
-            <div className="min-w-[72px] min-h-[72px] w-[72px] h-[72px] flex items-center justify-center border border-dashed border-gray-600 rounded-lg p-2">
+            <div className="min-w-[72px] min-h-[72px] w-[72px] h-[72px] flex items-center justify-center border border-dashed border-gray-600 rounded-lg p-2 hover:border-white50  transition duration-500 cursor-pointer">
               {stack.logo ? (
                 <img
                   src={stack.logo}

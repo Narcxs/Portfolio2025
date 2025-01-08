@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { StateOfPage } from "../../../App";
-import StacksList from "../HomeItems/StacksList";
+import { StateOfPage } from "../../../../App";
+import StacksList from "./HomeItems/StacksList";
 export default function Home() {
   const { actualpage, setactualpage, isActive } = useContext(StateOfPage);
   return (
