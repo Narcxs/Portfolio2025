@@ -29,32 +29,25 @@ export default function About() {
           <span className="text-gray-400">Projects Completed</span>
         </div>
       </div>
-      <div>
-        <div>
-          <h2 className="text-white50 font-medium text-2xl tracking-tighter">
+      <div className="flex justify-between gap-x-16">
+        <div className="w-[568px] h-[288px]">
+          <h2 className="text-white50 font-medium text-2xl  mb-4">
             Hello! I'm Morello,
           </h2>
-          <p>
-            a passionate front-end engineer with 2 years of experience in
-            creating seamless, engaging, and dynamic web applications. My
-            journey in front-end development is driven by a strong passion for
-            crafting clean, efficient, and user-friendly interfaces that enhance
-            the digital experience. In these two years, I’ve gained valuable
-            expertise in modern front-end technologies, building responsive web
-            designs, and collaborating with cross-functional teams to deliver
-            exceptional digital solutions. I excel at translating complex ideas
-            into intuitive, interactive interfaces that not only meet but exceed
-            user expectations.
+          <p className="text-base mb-4 text-gray-400">
+            I'm a front-end engineer with 2 years of experience creating
+            seamless, dynamic web applications. Driven by a passion for clean,
+            efficient, and user-friendly interfaces, I excel at turning complex
+            ideas into intuitive experiences.
           </p>
-          <p>
-            I take pride in staying updated with the latest trends and
-            advancements in front-end development, ensuring my work is always
-            innovative and cutting-edge. Whether it's building components,
-            optimizing performance, or enhancing user interactivity, I’m
-            dedicated to delivering code that drives both functionality and
-            aesthetics.
+          <p className="text-base text-gray-400">
+            I stay current with the latest front-end trends, ensuring innovative
+            and high-performing solutions. Whether it's building components,
+            optimizing performance, or enhancing interactivity, I'm committed to
+            delivering code that balances functionality and aesthetics.
           </p>
         </div>
+        <div className="bg-[url('./public/About/aboutimg.png')] bg-cover w-[568px] h-[384px]"></div>
       </div>
     </>
   );
