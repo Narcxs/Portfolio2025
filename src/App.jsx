@@ -1,8 +1,7 @@
-import { createContext, default as React, useState } from "react";
+import { default as React, useState } from "react";
 import MenuHome from "./components/Menu/MenuHome";
 import Sidebar from "./components/Sidebar/Sidebar";
-export const StateOfPage = createContext();
-
+import StateOfPage from "./context/StateOfPage";
 function App() {
   const isActive = (page) => actualpage === page;
   const [actualpage, setactualpage] = useState("home");

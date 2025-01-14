@@ -6,7 +6,7 @@ import {
   User,
 } from "@phosphor-icons/react";
 import { useContext } from "react";
-import { StateOfPage } from "../../../App";
+import StateOfPage from "../../../context/StateOfPage";
 
 export default function SideBarMenu() {
   const { actualpage, setactualpage, isActive } = useContext(StateOfPage);

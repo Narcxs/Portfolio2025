@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { StateOfPage } from "../../App";
+import StateOfPage from "../../context/StateOfPage";
 import About from "./MenuHome/About/About";
 import Blog from "./MenuHome/Blog/Blog";
 import Contact from "./MenuHome/Contact/Contact";
