@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router";
 import StateOfPage from "../../context/StateOfPage";
 import About from "./MenuHome/About/About";
 import Contact from "./MenuHome/Contact/Contact";
+import ErrorPage from "./MenuHome/ErrorPage/ErrorPage";
 import Home from "./MenuHome/Home/Home";
 import Projects from "./MenuHome/Projects/Projects";
 export default function MenuHome() {
@@ -47,6 +48,7 @@ export default function MenuHome() {
           </Layout>
         }
       />
+      <Route path="*" element={<ErrorPage />}></Route>
     </Routes>
   );
 }
