@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router";
 import StateOfPage from "../../../../context/StateOfPage";
 import StacksList from "./HomeItems/StacksList";
 export default function Home() {
@@ -19,13 +20,13 @@ export default function Home() {
       </div>
       <div className="flex items-center gap-x-3 pb-8 border-b-[1px] border-dashed border-gray-600 mb-20">
         <button className="px-4 py-3 bg-white50 rounded-lg text-black950 font-semibold text-sm">
-          <a href="mailto:simeon.morello11@gmail.com">Get In Touch</a>
+          <a href="mailto:morello.dev@gmail.com">Get In Touch</a>
         </button>
         <button
           onClick={() => setactualpage("about")}
           className="px-4 py-3 text-white50 border rounded-lg text-sm bg-black900 border-gray-600"
         >
-          About Me
+          <Link to="/about">About Me</Link>
         </button>
       </div>
       <div className="h-[400px]">

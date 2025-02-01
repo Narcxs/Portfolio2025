@@ -5,7 +5,7 @@ export default function About() {
         <h1 className="font-semibold text-5xl mb-8 ">About Me</h1>
         <div className="pb-8 border-b-[1px] border-dashed border-gray-600 mb-8">
           <button className="px-4 py-3 bg-white50 rounded-lg text-black950 font-semibold text-sm">
-            Get In Touch
+            <a href="mailto:morello.dev@gmail.com">Get In Touch</a>
           </button>
         </div>
       </div>
