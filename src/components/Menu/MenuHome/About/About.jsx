@@ -47,7 +47,7 @@ export default function About() {
             delivering code that balances functionality and aesthetics.
           </p>
         </div>
-        <div className="bg-[url('/About/aboutimg.png')] bg-cover w-[568px] h-[384px]"></div>
+        <div className="bg-[url('/About/aboutimg.png')] bg-cover w-[568px] h-[384px] rounded"></div>
       </div>
     </>
   );

@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Route, Routes } from "react-router";
 import StateOfPage from "../../context/StateOfPage";
 import About from "./MenuHome/About/About";
-import Blog from "./MenuHome/Blog/Blog";
 import Contact from "./MenuHome/Contact/Contact";
 import Home from "./MenuHome/Home/Home";
 import Projects from "./MenuHome/Projects/Projects";
@@ -37,14 +36,6 @@ export default function MenuHome() {
         element={
           <Layout>
             <Projects />
-          </Layout>
-        }
-      />
-      <Route
-        path="/blog"
-        element={
-          <Layout>
-            <Blog />
           </Layout>
         }
       />

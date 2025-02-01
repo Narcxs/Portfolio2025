@@ -1,7 +1,6 @@
 import {
   EnvelopeSimple,
   House,
-  Screencast,
   SuitcaseSimple,
   User,
 } from "@phosphor-icons/react";
@@ -55,19 +54,6 @@ export default function SideBarMenu() {
           >
             <SuitcaseSimple size={22} />
             <span>Projects</span>
-          </li>
-        </Link>
-
-        <Link to="/blog" onClick={() => handlePageChange("blog")}>
-          <li
-            className={`flex items-center gap-x-2 hover:text-white50 transition duration-500 cursor-pointer px-2 py-3 ${
-              isActive("blog")
-                ? "text-white50 border border-black850 rounded-md font-medium bg-black900 shadow-sm"
-                : ""
-            }`}
-          >
-            <Screencast size={22} />
-            <span>Blog</span>
           </li>
         </Link>
 
