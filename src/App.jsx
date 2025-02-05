@@ -9,11 +9,13 @@ function App() {
   const isActive = (page) => actualpage === page;
 
   return (
-    <div className="font-sans w-full h-screen bg-black950 flex">
+    <div className="font-sans min-h-screen bg-black950">
       <BrowserRouter>
         <StateOfPage.Provider value={{ actualpage, setactualpage, isActive }}>
           <Sidebar />
-          <MenuHome />
+          <main className="lg:pl-[320px]">
+            <MenuHome />
+          </main>
         </StateOfPage.Provider>
       </BrowserRouter>
     </div>

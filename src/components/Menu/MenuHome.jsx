@@ -6,11 +6,13 @@ import Contact from "./MenuHome/Contact/Contact";
 import ErrorPage from "./MenuHome/ErrorPage/ErrorPage";
 import Home from "./MenuHome/Home/Home";
 import Projects from "./MenuHome/Projects/Projects";
+
 export default function MenuHome() {
   const { actualpage, setactualpage, isActive } = useContext(StateOfPage);
+
   const Layout = ({ children }) => (
-    <div className="w-full  bg-black99 px-4 sm:px-6 md:px-8 lg:pl-[100px] py-8 sm:py-16 md:py-24 lg:py-32 mt-10 ml-0 lg:ml-[100px]">
-      <div className="w-full max-w-[1200px] h-full mx-auto text-white50 overflow-y-auto">
+    <div className="w-full bg-black99 px-4 sm:px-6 md:px-8 lg:px-16 pt-16 lg:pt-8 pb-8 sm:pb-16">
+      <div className="w-full max-w-[1200px] mx-auto text-white50">
         {children}
       </div>
     </div>
@@ -50,7 +52,7 @@ export default function MenuHome() {
           </Layout>
         }
       />
-      <Route path="*" element={<ErrorPage />}></Route>
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
 }

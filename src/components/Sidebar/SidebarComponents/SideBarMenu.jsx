@@ -8,11 +8,15 @@ import { useContext } from "react";
 import { Link } from "react-router";
 import StateOfPage from "../../../context/StateOfPage";
 
-export default function SideBarMenu() {
+export default function SideBarMenu({ setIsOpen }) {
   const { actualpage, setactualpage, isActive } = useContext(StateOfPage);
 
   const handlePageChange = (page) => {
     setactualpage(page);
+    // Ferme la sidebar uniquement sur mobile
+    if (window.innerWidth < 1024) {
+      setIsOpen(false);
+    }
   };
 
   return (
