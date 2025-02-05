@@ -23,7 +23,7 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Burger Menu Button */}
+      {/* Bouton Burger Menu */}
       <button
         className={`lg:hidden fixed top-4 left-4 z-50 p-2 burger-button ${
           isOpen ? "hidden" : ""
@@ -49,24 +49,20 @@ export default function Sidebar() {
 
       {/* Sidebar */}
       <div
-        className={`
-        fixed lg:static
+        className={`sidebar fixed lg:static transition-all duration-300
+        px-6 py-3 w-[320px] min-h-screen border-r border-gray-600
+        bg-black950 lg:bg-transparent z-40
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
-        transition-transform duration-300
-        px-6 py-3 w-[320px] h-screen border-r-[1px] border-gray-600
-        
-        bg-[your-background-color] lg:bg-transparent
-        bg-black950
-        z-40
+        lg:opacity-100 lg:visible
       `}
       >
         <header className="mb-14 py-4">
-          <div className="flex gap-x-2.5 border-b-[1px] border-dashed border-gray-600 pb-5 items-center">
+          <div className="flex gap-x-2.5 border-b border-dashed border-gray-600 pb-5 items-center">
             <div className="w-14 h-14 bg-black rounded-md"></div>
             <div className="flex flex-col justify-start">
               <h3 className="font-medium text-white50 text-lg">Morello</h3>
               <p className="text-sm font-medium text-gray-400">
-                Front End Enginer
+                Front-End Developer
               </p>
             </div>
           </div>
