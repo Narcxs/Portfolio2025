@@ -9,7 +9,7 @@ import Projects from "./MenuHome/Projects/Projects";
 export default function MenuHome() {
   const { actualpage, setactualpage, isActive } = useContext(StateOfPage);
   const Layout = ({ children }) => (
-    <div className="w-full h-screen bg-black99 px-4 sm:px-6 md:px-8 lg:pl-[340px] py-8 sm:py-16 md:py-24 lg:py-32 mt-10 ml-0 lg:ml-[100px]">
+    <div className="w-full h-screen bg-black99 px-4 sm:px-6 md:px-8 lg:pl-[100px] py-8 sm:py-16 md:py-24 lg:py-32 mt-10 ml-0 lg:ml-[100px]">
       <div className="w-full max-w-[1200px] h-full mx-auto text-white50 overflow-y-auto">
         {children}
       </div>
