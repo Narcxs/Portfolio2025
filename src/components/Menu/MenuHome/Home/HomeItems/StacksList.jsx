@@ -20,6 +20,11 @@ export default function StacksList() {
       subtitle: "Code Hosting Platform",
       logo: "/StackSvg/Github.svg",
     },
+    {
+      stack: "Typescript",
+      subtitle: "Typed Programming Language",
+      logo: "/StackSvg/Typescript.svg",
+    },
   ];
   return (
     <>

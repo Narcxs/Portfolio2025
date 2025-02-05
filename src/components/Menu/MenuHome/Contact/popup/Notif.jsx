@@ -2,11 +2,11 @@ export default function Notif() {
   return (
     <div
       role="alert"
-      className="alert alert-success absolute bottom-0 right-0 mb-4 mr-4  w-[340px] h-[55px] text-xs"
+      className="alert alert-success absolute bottom-0 right-0 mb-2 sm:mb-4 mr-2 sm:mr-4 w-[280px] sm:w-[340px] h-[45px] sm:h-[55px] text-[10px] sm:text-xs"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 shrink-0 stroke-current"
+        className="h-4 w-4 sm:h-6 sm:w-6 shrink-0 stroke-current"
         fill="none"
         viewBox="0 0 24 24"
       >

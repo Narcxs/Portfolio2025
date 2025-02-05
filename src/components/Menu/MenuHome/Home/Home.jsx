@@ -6,30 +6,31 @@ export default function Home() {
   const { actualpage, setactualpage, isActive } = useContext(StateOfPage);
   return (
     <>
-      <span className="font-light text-md flex items-center gap-x-1.5 px-3 py-1.5 bg-black850 rounded-lg w-[165px] mb-4 shadow-md">
-        <div className="w-2 h-2 rounded-full bg-active"></div>
+      <span className="font-light text-sm sm:text-md flex items-center gap-x-1.5 px-2 sm:px-3 py-1 sm:py-1.5 bg-black850 rounded-lg w-[140px] sm:w-[165px] mb-3 sm:mb-4 shadow-md">
+        <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-active"></div>
         Available for Work
       </span>
-      <div className="mb-8">
-        <h1 className="font-semibold text-5xl mb-4">
-          Hi, I'm Morello, <br /> a Front-End Developer.
+      <div className="mb-6 sm:mb-8">
+        <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">
+          Hi, I&apos;m Morello, <br /> a Front-End Developer.
         </h1>
-        <p className="text-gray400 text-base">
-          I've been building websites and user-friendly interfaces for 2 years.
+        <p className="text-gray400 text-sm sm:text-base">
+          I&apos;ve been building websites and user-friendly interfaces for 2
+          years.
         </p>
       </div>
-      <div className="flex items-center gap-x-3 pb-8 border-b-[1px] border-dashed border-gray-600 mb-20">
-        <button className="px-4 py-3 bg-white50 rounded-lg text-black950 font-semibold text-sm">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-3 sm:gap-y-0 gap-x-0 sm:gap-x-3 pb-6 sm:pb-8 border-b-[1px] border-dashed border-gray-600 mb-16 sm:mb-20">
+        <button className="w-full sm:w-auto px-3 sm:px-4 py-2.5 sm:py-3 bg-white50 rounded-lg text-black950 font-semibold text-sm">
           <a href="mailto:morello.dev@gmail.com">Get In Touch</a>
         </button>
         <button
           onClick={() => setactualpage("about")}
-          className="px-4 py-3 text-white50 border rounded-lg text-sm bg-black900 border-gray-600"
+          className="w-full sm:w-auto px-3 sm:px-4 py-2.5 sm:py-3 text-white50 border rounded-lg text-sm bg-black900 border-gray-600"
         >
           <Link to="/about">About Me</Link>
         </button>
       </div>
-      <div className="h-[400px]">
+      <div className="h-[300px] sm:h-[350px] md:h-[400px]">
         <StacksList />
       </div>
     </>
