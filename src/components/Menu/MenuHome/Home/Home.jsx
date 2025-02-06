@@ -24,15 +24,19 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-y-3 sm:gap-y-0 gap-x-0 sm:gap-x-3 pb-6 sm:pb-8 border-b-[1px] border-dashed border-gray-600 mb-16 sm:mb-20">
-        <button className="w-full sm:w-auto px-3 sm:px-4 py-2.5 sm:py-3 bg-white50 rounded-lg text-black950 font-semibold text-sm">
-          <a href="mailto:morello.dev@gmail.com">Get In Touch</a>
-        </button>
-        <button
-          onClick={() => setactualpage("about")}
-          className="w-full sm:w-auto px-3 sm:px-4 py-2.5 sm:py-3 text-white50 border rounded-lg text-sm bg-black900 border-gray-600"
-        >
-          <Link to="/about">About Me</Link>
-        </button>
+        <a href="mailto:morello.dev@gmail.com" className="w-full sm:w-auto">
+          <button className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-white50 rounded-lg text-black950 font-semibold text-sm">
+            Get In Touch
+          </button>
+        </a>
+        <Link to="/about" className="w-full sm:w-auto">
+          <button
+            onClick={() => setactualpage("about")}
+            className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-white50 border rounded-lg text-sm bg-black900 border-gray-600"
+          >
+            About Me
+          </button>
+        </Link>
       </div>
 
       <div className="w-full">

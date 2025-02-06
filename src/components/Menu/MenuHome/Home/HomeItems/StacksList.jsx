@@ -35,7 +35,7 @@ export default function StacksList() {
         {stacks.map((stack, index) => (
           <div
             key={index}
-            className="flex items-center gap-x-4 p-3 rounded-lg hover:bg-black850 transition-colors duration-300"
+            className="flex items-center gap-x-4 p-3 rounded-lg  transition-colors duration-1000 cursor-pointer"
           >
             <div className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] flex items-center justify-center border border-dashed border-gray-600 rounded-lg p-2 hover:border-white50 transition duration-300 cursor-pointer">
               {stack.logo ? (
