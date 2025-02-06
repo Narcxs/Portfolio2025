@@ -31,18 +31,18 @@ export default function StacksList() {
     <>
       <h2 className="text-xl sm:text-2xl font-medium mb-6 sm:mb-8">My Stack</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
         {stacks.map((stack, index) => (
           <div
             key={index}
-            className="flex items-center gap-x-4 p-3 rounded-lg  transition-colors duration-1000 cursor-pointer"
+            className="flex items-center gap-x-4 p-3 rounded-lg transition-colors duration-1000 cursor-pointer w-full overflow-hidden"
           >
-            <div className="w-[60px] h-[60px] sm:w-[72px] sm:h-[72px] flex items-center justify-center border border-dashed border-gray-600 rounded-lg p-2 hover:border-white50 transition duration-300 cursor-pointer">
+            <div className="min-w-[69px] min-h-[69px] w-[69px] h-[69px] flex-shrink-0 flex items-center justify-center border border-dashed border-gray-600 rounded-lg p-2 hover:border-white50 transition duration-300 cursor-pointer">
               {stack.logo ? (
                 <img
                   src={stack.logo}
                   alt={`${stack.stack} logo`}
-                  className="w-[36px] sm:w-[48px] h-[36px] sm:h-[48px] object-contain"
+                  className="w-[41px] h-[41px] object-contain"
                 />
               ) : (
                 <span className="text-xs text-gray-500">No logo</span>
