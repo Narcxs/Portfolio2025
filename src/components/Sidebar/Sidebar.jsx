@@ -56,7 +56,13 @@ export default function Sidebar() {
         <div className="px-6 py-3">
           <header className="mb-14 py-4">
             <div className="flex gap-x-2.5 border-b border-dashed border-gray-600 pb-5 items-center">
-              <div className="w-14 h-14 bg-black rounded-md"></div>
+              <div className="w-10 h-10 bg-black rounded-md overflow-hidden">
+                <img
+                  src="/About/profile.jpg"
+                  alt="Photo de profil"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="flex flex-col justify-start">
                 <h3 className="font-medium text-white50 text-lg">Morello</h3>
                 <p className="text-sm font-medium text-gray-400">
