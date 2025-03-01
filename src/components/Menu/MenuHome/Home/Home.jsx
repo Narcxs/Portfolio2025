@@ -9,7 +9,7 @@ export default function Home() {
   const { setactualpage } = useContext(StateOfPage);
 
   const handleAnimationComplete = () => {
-    console.log("All letters have animated!");
+    console.log("");
   };
 
   return (
