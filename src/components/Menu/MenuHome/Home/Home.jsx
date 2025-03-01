@@ -1,10 +1,16 @@
 import { useContext } from "react";
 import { Link } from "react-router";
 import StateOfPage from "../../../../context/StateOfPage";
+import BlurText from "./HomeItems/AnimatedText/SubTitle";
+import SplitText from "./HomeItems/AnimatedText/Title";
 import StacksList from "./HomeItems/StacksList";
 
 export default function Home() {
-  const { actualpage, setactualpage, isActive } = useContext(StateOfPage);
+  const { setactualpage } = useContext(StateOfPage);
+
+  const handleAnimationComplete = () => {
+    console.log("All letters have animated!");
+  };
 
   return (
     <>
@@ -15,8 +21,28 @@ export default function Home() {
 
       <div className="mb-6 sm:mb-8">
         <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">
-          Hi, I&apos;m Morello, <br /> a Front-End Developer.
+          <SplitText
+            text="Hello, I'm Morello!"
+            className="font-semibold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4r"
+            delay={50}
+            animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+            animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+            easing="easeOutCubic"
+            threshold={0.2}
+            rootMargin="-50px"
+            onLetterAnimationComplete={handleAnimationComplete}
+          />
+          <br />
+          <BlurText
+            text="a Front-End Developer."
+            delay={20}
+            animateBy="words"
+            direction="bottom"
+            onAnimationComplete={handleAnimationComplete}
+            className="font-semibold text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4r"
+          />
         </h1>
+
         <p className="text-gray400 text-sm sm:text-base">
           I&apos;ve been building websites and user-friendly interfaces for 2
           years.
