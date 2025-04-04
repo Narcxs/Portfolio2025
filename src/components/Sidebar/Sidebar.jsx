@@ -66,7 +66,7 @@ export default function Sidebar() {
               <div className="flex flex-col justify-start">
                 <h3 className="font-medium text-white50 text-lg">Morello</h3>
                 <p className="text-sm font-medium text-gray-400">
-                  Front-End Developer
+                  Full-Stack Developer
                 </p>
               </div>
             </div>

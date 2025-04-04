@@ -34,7 +34,7 @@ export default function Home() {
           />
           <br />
           <BlurText
-            text="a Front-End Developer."
+            text="a Full-Stack Developer."
             delay={20}
             animateBy="words"
             direction="bottom"
